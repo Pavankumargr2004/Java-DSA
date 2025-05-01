@@ -1,0 +1,29 @@
+Big o notation:
+"how code slows as data grows"
+Describes the performance of an algorithm as the amount of data increases
+machine independent 
+ignore smaller operations O(n+1)->O(n)
+example:
+O(1)        n=amount of data
+O(n)
+O(log n)
+O(n^2)
+
+
+// O(n) because the loop runs n times
+
+int addup(int n) {
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum += i;
+    }
+    return sum;
+}
+
+// O(1) because the loop runs a constant number of times (3)
+
+int addup(int n)
+{
+int sum=n*(n+1)/2;
+return sum;
+}
